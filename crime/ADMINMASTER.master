@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ADMINMASTER.master.cs" Inherits="ADMINMASTER" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body alink="#ccffff">
+    <form id="form1" runat="server">
+    <table class="style1" bgcolor="#FFCCFF">
+        <tr>
+            <td style="text-align: right">
+                &nbsp;&nbsp;&nbsp;
+                <asp:Image ID="Image2" runat="server" Height="143px" 
+                    ImageUrl="~/IMAGES/LOGO.jpg" Width="138px" BackColor="#CCCCFF" 
+                    ForeColor="#FF99FF" meta:resourcekey="Image2Resource1" />
+            </td>
+            <td style="text-align: justify">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="XX-Large" 
+                    ForeColor="#CC3300" Text="BHARAT" meta:resourcekey="Label6Resource1"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="X-Large" 
+                    ForeColor="#CC3300" Text="INSTITUTE OF TECHNOLOGY &amp; SCIENCE FOR WOMEN" 
+                    meta:resourcekey="Label7Resource1"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="Large" 
+                    ForeColor="#009900" Text="Affiliated to JNTU, Approved by AICTE" 
+                    meta:resourcekey="Label8Resource1"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label10" runat="server" Font-Bold="True" Font-Size="Large" 
+                    Text="Phone : 08414-252313 / 399" meta:resourcekey="Label10Resource1"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <asp:Menu ID="Menu2" runat="server" Height="22px" Orientation="Horizontal" 
+                    Width="1266px" onmenuitemclick="Menu2_MenuItemClick" ForeColor="Blue" 
+                    meta:resourcekey="Menu2Resource1">
+                    <StaticMenuItemStyle BorderStyle="Groove" BorderWidth="5px" Font-Bold="True" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/HOME.aspx" Text="HOME" Value="HOME" 
+                            meta:resourcekey="MenuItemResource1"></asp:MenuItem>
+                        <asp:MenuItem Text="REGISTRATIONS" Value="REGISTRATIONS" 
+                            meta:resourcekey="MenuItemResource4">
+                            <asp:MenuItem Text="STUDENT REGISTRATION" Value="STUDENT REGISTRATION" 
+                                NavigateUrl="~/STUDENTREGISTRATION.aspx" 
+                                meta:resourcekey="MenuItemResource2">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="STAFF REGISTRATION" Value="STAFF REGISTRATION" 
+                                NavigateUrl="~/STAFF REGISTRATION.aspx" 
+                                meta:resourcekey="MenuItemResource3">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="DETAILS" Value="DETAILS" 
+                            meta:resourcekey="MenuItemResource12">
+                            <asp:MenuItem Text="STUDENT " Value="STUDENT " 
+                                meta:resourcekey="MenuItemResource9">
+                                <asp:MenuItem Text="ATTENDENCE" Value="ATTENDENCE" 
+                                    NavigateUrl="~/VIEW STUDENT ATTENDENCE BY ADMIN.aspx" 
+                                    meta:resourcekey="MenuItemResource5"></asp:MenuItem>
+                                <asp:MenuItem Text="FEES" Value="FEES" 
+                                    NavigateUrl="~/VIEW FEE DETAILS BY ADMIN.aspx" 
+                                    meta:resourcekey="MenuItemResource6"></asp:MenuItem>
+                                <asp:MenuItem Text="MARKS" Value="MARKS" 
+                                    NavigateUrl="~/VIEW STUDENT MARKS BY ADMIN.aspx" 
+                                    meta:resourcekey="MenuItemResource7">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/STUDENT REGISTRATION VIEW.aspx" 
+                                    Text="REGISTRATION" Value="REGISTRATION" 
+                                    meta:resourcekey="MenuItemResource8"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="STAFF" Value="STAFF" meta:resourcekey="MenuItemResource11">
+                                <asp:MenuItem Text="REGISTRATION" Value="ATTENDENCE" 
+                                    NavigateUrl="~/VIEW STAFF REGISTRATION.aspx" 
+                                    meta:resourcekey="MenuItemResource10"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="NOTIFICATIONS" Value="NOTIFICATIONS" 
+                            NavigateUrl="~/ADMIN NOTIFICATION.aspx" 
+                            meta:resourcekey="MenuItemResource13">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="LOG OUT" Value="ACCOUNT SETTINGS" 
+                            NavigateUrl="~/Login.aspx" meta:resourcekey="MenuItemResource14">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td style="text-align: right">
+                <asp:Label ID="Label17" runat="server" Text="DATE" Font-Bold="True" 
+                    Font-Size="Medium" ForeColor="#3366FF" meta:resourcekey="Label17Resource1"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="txtdate" runat="server" Enabled="False" Width="88px" 
+                    ontextchanged="txtdate_TextChanged" meta:resourcekey="txtdateResource1"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                </td>
+            <td>
+                </td>
+        </tr>
+    </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{109F8059-3CCD-4317-BC36-DC788BDE59A4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>COLLEGE_AUTOMATION_TOOL</RootNamespace>
+    <AssemblyName>COLLEGE AUTOMATION TOOL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <Nonshipping>true</Nonshipping>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ACCOUNTS.master">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="ADMINMASTER.master">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="STAFF.master" />
+    <None Include="STUDENT.master" />
+    <None Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ACCOUNTS.master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ACCOUNTSHOME.aspx" />
+    <Content Include="ACCOUNTSHOME.aspx.cs" />
+    <Content Include="ADMINMASTER.master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="App_Code\connections.cs" />
+    <Content Include="CERTIFICATE ISSUES.aspx" />
+    <Content Include="CERTIFICATE ISSUES.aspx.cs" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default.aspx.cs" />
+    <Content Include="FEE DETAILS VIEW BY STUDENT.aspx" />
+    <Content Include="FEE DETAILS VIEW BY STUDENT.aspx.cs" />
+    <Content Include="FEE DETAILS.aspx" />
+    <Content Include="FEE DETAILS.aspx.cs" />
+    <Content Include="HOME.aspx" />
+    <Content Include="HOME.aspx.cs" />
+    <Content Include="IMAGES\141.JPG" />
+    <Content Include="IMAGES\LOGO.jpg" />
+    <Content Include="MONTHLY ATTENDENCE VIEW BY STUDENT.aspx" />
+    <Content Include="MONTHLY ATTENDENCE VIEW BY STUDENT.aspx.cs" />
+    <Content Include="SESSION PLANS VIEW BY STUDENT.aspx" />
+    <Content Include="SESSION PLANS VIEW BY STUDENT.aspx.cs" />
+    <Content Include="STAFF ATTENDENCE DETAILS.aspx" />
+    <Content Include="STAFF ATTENDENCE DETAILS.aspx.cs" />
+    <Content Include="STAFF DETAILS.aspx" />
+    <Content Include="STAFF DETAILS.aspx.cs" />
+    <Content Include="STAFF NOTIFICATIONS.aspx" />
+    <Content Include="STAFF NOTIFICATIONS.aspx.cs" />
+    <Content Include="STAFF PROFILE VIEW.aspx" />
+    <Content Include="STAFF PROFILE VIEW.aspx.cs" />
+    <Content Include="STAFF REGISTRATION VIEW BY ID.aspx" />
+    <Content Include="STAFF REGISTRATION VIEW BY ID.aspx.cs" />
+    <Content Include="STAFF REGISTRATION.aspx" />
+    <Content Include="STAFF REGISTRATION.aspx.cs" />
+    <Content Include="STAFF SESSION PLANS.aspx" />
+    <Content Include="STAFF SESSION PLANS.aspx.cs" />
+    <Content Include="STAFF.master.cs" />
+    <Content Include="STAFFHOME.aspx" />
+    <Content Include="STAFFHOME.aspx.cs" />
+    <Content Include="STUDENT 1ST YEAR EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 1ST YEAR EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 1ST YEAR INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 1ST YEAR INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 1ST YEAR INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 1ST YEAR INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 1ST YEAR INTERNAL-3 MARKS.aspx" />
+    <Content Include="STUDENT 1ST YEAR INTERNAL-3 MARKS.aspx.cs" />
+    <Content Include="STUDENT 1ST YEAR LAB MARKS.aspx" />
+    <Content Include="STUDENT 1ST YEAR LAB MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-1 SEM EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 2-1 SEM EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-1 SEM INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 2-1 SEM INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-1 SEM INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 2-1 SEM INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-1 SEM LAB MARKS.aspx" />
+    <Content Include="STUDENT 2-1 SEM LAB MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-2 SEM EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 2-2 SEM EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-2 SEM INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 2-2 SEM INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-2 SEM INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 2-2 SEM INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 2-2 SEM LAB MARKS.aspx" />
+    <Content Include="STUDENT 2-2 SEM LAB MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-1 SEM EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 3-1 SEM EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-1 SEM INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 3-1 SEM INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-1 SEM INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 3-1 SEM INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-1 SEM LAB MARKS.aspx" />
+    <Content Include="STUDENT 3-1 SEM LAB MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-2 SEM EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 3-2 SEM EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-2 SEM INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 3-2 SEM INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-2 SEM INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 3-2 SEM INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 3-2 SEM LAB MARKS.aspx" />
+    <Content Include="STUDENT 3-2 SEM LAB MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-1 SEM EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 4-1 SEM EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-1 SEM INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 4-1 SEM INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-1 SEM INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 4-1 SEM INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-1 SEM Lab MARKS.aspx" />
+    <Content Include="STUDENT 4-1 SEM Lab MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-2 SEM EXTERNAL MARKS.aspx" />
+    <Content Include="STUDENT 4-2 SEM EXTERNAL MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-2 SEM INTERNAL-1 MARKS.aspx" />
+    <Content Include="STUDENT 4-2 SEM INTERNAL-1 MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-2 SEM INTERNAL-2 MARKS.aspx" />
+    <Content Include="STUDENT 4-2 SEM INTERNAL-2 MARKS.aspx.cs" />
+    <Content Include="STUDENT 4-2 SEM LAB MARKS.aspx" />
+    <Content Include="STUDENT 4-2 SEM LAB MARKS.aspx.cs" />
+    <Content Include="STUDENT ATTENDENCE DETAILS.aspx" />
+    <Content Include="STUDENT ATTENDENCE DETAILS.aspx.cs" />
+    <Content Include="STUDENT CHANGE PASSWORD.aspx" />
+    <Content Include="STUDENT CHANGE PASSWORD.aspx.cs" />
+    <Content Include="STUDENT EXAMINATION DETAILS.aspx" />
+    <Content Include="STUDENT EXAMINATION DETAILS.aspx.cs" />
+    <Content Include="STUDENT FEE DETAILS.aspx" />
+    <Content Include="STUDENT FEE DETAILS.aspx.cs" />
+    <Content Include="STUDENT MARKS.aspx" />
+    <Content Include="STUDENT MARKS.aspx.cs" />
+    <Content Include="STUDENT NOTIFICATIONS.aspx" />
+    <Content Include="STUDENT NOTIFICATIONS.aspx.cs" />
+    <Content Include="STUDENT PROFILE VIEW.aspx" />
+    <Content Include="STUDENT PROFILE VIEW.aspx.cs" />
+    <Content Include="STUDENT REGISTRATION VIEW.aspx" />
+    <Content Include="STUDENT REGISTRATION VIEW.aspx.cs" />
+    <Content Include="STUDENT VIEW DETAILS BY DEPARTEMENT.aspx" />
+    <Content Include="STUDENT VIEW DETAILS BY DEPARTEMENT.aspx.cs" />
+    <Content Include="STUDENT VIEW DETAILS BY ID.aspx" />
+    <Content Include="STUDENT VIEW DETAILS BY ID.aspx.cs" />
+    <Content Include="STUDENT.master.cs" />
+    <Content Include="StudentHome.aspx" />
+    <Content Include="StudentHome.aspx.cs" />
+    <Content Include="STUDENTREGISTRATION.aspx" />
+    <Content Include="STUDENTREGISTRATION.aspx.cs" />
+    <Content Include="SUDENT MONTHLY ATTENDENCE.aspx" />
+    <Content Include="SUDENT MONTHLY ATTENDENCE.aspx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_LocalResources\ABC.master.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
