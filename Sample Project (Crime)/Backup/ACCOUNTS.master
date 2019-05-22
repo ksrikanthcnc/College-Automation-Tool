@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ACCOUNTS.master.cs" Inherits="ACCOUNTS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ACCOUNTS</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" bgcolor="#C6FFAA">
+            <tr>
+                <td class="style4">
+                <asp:Image ID="Image2" runat="server" Height="143px" 
+                    ImageUrl="~/IMAGES/LOGO.jpg" Width="129px" />
+                </td>
+                <td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;
+                <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="XX-Large" 
+                    ForeColor="#CC3300" Text="BHARAT"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="X-Large" 
+                    ForeColor="#CC3300" Text="INSTITUTE OF TECHNOLOGY &amp; SCIENCE FOR WOMEN"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="Large" 
+                    ForeColor="#009900" Text="Affiliated to JNTU, Approved by AICTE"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label10" runat="server" Font-Bold="True" Font-Size="Large" 
+                    Text="Phone : 08414-252313 / 399"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4" colspan="2">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                        StaticSubMenuIndent="" style="text-align: center; font-weight: 700;" Width="1266px" 
+                        ItemWrap="True" DynamicPopOutImageTextFormatString="" SkipLinkText="" 
+                        ForeColor="#EA0075" Height="22px">
+                        <StaticMenuStyle BorderStyle="Groove" BorderWidth="3px" />
+                        <StaticMenuItemStyle BorderStyle="Groove" BorderWidth="5px" />
+                        <DynamicHoverStyle BorderStyle="None" />
+                        <Items>
+                            <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/ACCOUNTSHOME.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="STUDENT FEE DETAILS" Value="STUDENT FEE DETAILS" 
+                                NavigateUrl="~/FEE DETAILS.aspx" Selected="True">
+                                <asp:MenuItem NavigateUrl="~/VIEW STUDENT FEE DETAILS BY ACCOUNTS.aspx" 
+                                    Text="VIEW " Value="VIEW "></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/FEE DETAILS.aspx" Text="UPDATE" Value="UPDATE">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="ISSUES" Value="ISSUES" 
+                                NavigateUrl="~/CERTIFICATE ISSUES.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="NOTIFICATIONS" Value="NOTIFICATIONS" 
+                                NavigateUrl="~/ACCOUNTS NOTIFICATION.aspx">
+                                <asp:MenuItem NavigateUrl="~/VIEW ACCOUNTS NOTIFICATION.aspx" Text="VIEW" 
+                                    Value="VIEW"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ACCOUNTS NOTIFICATION.aspx" Text="UPDATE" 
+                                    Value="UPDATE"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="ACCOUNT SETTINGS" Value="ACCOUNT SETTINGS">
+                                <asp:MenuItem Text="CHANGE PASSWORD" Value="CHANGE PASSWORD" 
+                                    NavigateUrl="~/ACCOUNTS CHANGE PASSWORD.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="LOGOUT" Value="LOGOUT" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="style4">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4" colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td style="text-align: right">
+                    <asp:Label ID="Label11" runat="server" Text="DATE" Enabled="False"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="txtdate" runat="server" ontextchanged="TextBox1_TextChanged" 
+                        Enabled="False"></asp:TextBox>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

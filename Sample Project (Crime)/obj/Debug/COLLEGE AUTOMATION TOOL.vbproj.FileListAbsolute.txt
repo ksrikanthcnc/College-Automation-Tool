@@ -1,0 +1,4 @@
+G:\CollegeAutomationTool\obj\Debug\ResolveAssemblyReference.cache
+G:\CollegeAutomationTool\obj\Debug\COLLEGE_AUTOMATION_TOOL.ABC.master.resources
+G:\CollegeAutomationTool\obj\Debug\COLLEGE AUTOMATION TOOL.vbproj.GenerateResource.Cache
+D:\CSE-DATA\PROJECTS\.NET Projects\CollegeAutomationTool\obj\Debug\COLLEGE AUTOMATION TOOL.vbproj.GenerateResource.Cache
